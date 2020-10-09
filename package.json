@@ -1,0 +1,38 @@
+{
+  "name": "ts-react-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/client/index.html",
+    "build": "parcel build --public-url /dist src/client/index.html",
+    "start": "npm run build && tsc && npm run start:server",
+    "start:server": "node lib/server/index.js",
+    "clear": "rm -rf dist/ .cache/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@reach/router": "^1.3.4",
+    "express": "^4.17.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@types/reach__router": "^1.3.6",
+    "@types/react": "^16.9.51",
+    "@types/react-dom": "^16.9.8",
+    "@typescript-eslint/eslint-plugin": "^4.4.0",
+    "@typescript-eslint/parser": "^4.4.0",
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.21.3",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.3"
+  }
+}
